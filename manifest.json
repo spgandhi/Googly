@@ -1,0 +1,25 @@
+{
+  "name": "Googly",
+  "version": "1.0",
+  "description": "Keeps a count of google searches and displays on the search page",
+  "options_page": "options.html",
+  "page_action" :
+  {
+    "default_icon" : "icon-19.png",
+    "default_title" : "There's a 'G' in this URL!"
+  },
+   "content_scripts": [
+    {
+      "matches": ["https://www.google.co.in/*","https://www.google.com/*"],
+      "js": ["jquery-2.1.3.js","jquery.browser.min.js","js-hashchange.min.js","myscript.js"]
+    }
+  ],
+  "permissions" : [
+    "declarativeContent", "tabs",  "storage"
+  ],
+  "icons" : {
+    "48" : "icon-48.png",
+    "128" : "icon-128.png"
+  },
+  "manifest_version": 2
+}
