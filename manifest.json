@@ -11,7 +11,7 @@
    "content_scripts": [
     {
       "matches": ["https://www.google.co.in/*","https://www.google.com/*"],
-      "js": ["jquery-2.1.3.js","jquery.browser.min.js","js-hashchange.min.js","myscript.js"]
+      "js": ["jquery-2.1.3.js","jquery.browser.min.js","js-hashchange.min.js","main-script.js"]
     }
   ],
   "permissions" : [
