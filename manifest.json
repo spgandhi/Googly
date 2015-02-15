@@ -1,6 +1,6 @@
 {
   "name": "Googly",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Keeps a count of google searches and displays on the search page",
   "options_page": "options.html",
   "page_action" :
@@ -15,8 +15,11 @@
     }
   ],
   "permissions" : [
-    "declarativeContent", "tabs",  "storage"
+    "declarativeContent", "tabs",  "storage","background"
   ],
+  "background": {
+    "page" : "background.html"
+  },
   "icons" : {
     "48" : "icon-48.png",
     "128" : "icon-128.png"
